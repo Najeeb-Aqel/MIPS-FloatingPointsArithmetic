@@ -15,4 +15,4 @@
 	
 	li $v0, 6
 	li 
-	
+	nkjkj
