@@ -15,8 +15,4 @@
 	
 	li $v0, 6
 	li 
-	ljij
-
-	lkdfjkljdf
-	lkdfjkljdfdsklfjlkj
-	kjhfdjkh
+	
