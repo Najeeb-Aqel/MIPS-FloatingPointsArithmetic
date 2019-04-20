@@ -13,3 +13,10 @@
 	la $a0, message
 	syscall 
 	
+	li $v0, 6
+	li 
+	ljij
+
+	lkdfjkljdf
+	lkdfjkljdfdsklfjlkj
+	kjhfdjkh
