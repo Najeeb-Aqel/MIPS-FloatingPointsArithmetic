@@ -90,9 +90,12 @@
     	#beq $t5, $0, continue   # if $t5 = 1, then swap them
     	c.lt.s $f20,$f21       # if the following value is greater, swap them
 	bc1t continue
+	c.eq.s $f20,$f21
+	bc1t continue
     	add $t1, $0, 1          # if we need to swap, we need to check the list again
     	s.s  $f20, 4($a0)         # store the greater numbers contents in the higher position in array (swap)
     	s.s  $f21, 0($a0)         # store the lesser numbers contents in the lower position in array (swap)
+
 	continue:
     	addi $a0, $a0, 4            # advance the array to start at the next location from last time
     	bne  $a0, $t0, innerLoop    # If $a0 != the end of Array, jump back to innerLoop
